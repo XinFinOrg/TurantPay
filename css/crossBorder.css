@@ -286,4 +286,5 @@ img::-moz-selection {
 .content-section
 {
   padding-top: 50px;
+  padding-bottom: 0px;
 }
