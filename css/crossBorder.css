@@ -283,3 +283,7 @@ img::-moz-selection {
   background: transparent;
 }
 
+.content-section
+{
+  padding-top: 50px;
+}
