@@ -4,9 +4,18 @@ Turant Pay is a P2P Remittance standard built on the XDC Protocol. The standard 
 
 For many businesses, individuals and government agencies, making or receiving payments that cross borders is a necessary activity. Many businesses serve customers abroad and rely on buying goods from suppliers abroad but, in order to do so, they need to be able to receive payments from those customers and make them to those suppliers. Similarly, many people depend on the ability to readily send or receive cross-border payments, such as migrants who send money to families in their home countries or individuals who make online purchases from foreign retailers.
 
+# **Fabric Components**
+
+
+**XDC Nodes** : "Node" refers to a logical and not necessarily physical separation of function. Clients are the end-user facing nodes. XDC01 architecture provides multiple interfaces to the blockchain. Users (which may be application software) send transaction requests to the XDC01 network using these interfaces via a client node.
+
+**Peer** - Peers maintain the state of the ledger by executing Xinfin Blockchain and participating in consensus formation. XDC01 blockchain/smart contract which are the business rules is installed on peers. Smart contracts are central to Xinfin blockchain networks as they dictate the rules of the "card" game that is the blockchain network. A Peer does not create new blocks but it validates blocks and transactions.
+
 **XDC01 Blockchain** - We will be looking at permission/managed/private blockchain where organizations are required to get consent from membership authorities to join the XDC01 network. This is not the case with bitcoin and other coins where the network is "public" and is free for all!
 
-Transaction Flow Let's see how nodes work together to execute a transaction. For now, let's assume that the chaincode is already installed on the Peers.
+# **Transaction Flow** 
+
+Let's see how nodes work together to execute a transaction. For now, let's assume that the chaincode is already installed on the Peers.
 
 **Step 1:** Transaction requests are proposed by a client. The client must be connected to the required number of peers according to the endorsement policy. A proposed Transaction is forwarded to Peers for Endorsement.
 
